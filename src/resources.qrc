@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/logo.png</file>
+        <file>resources/red-dot.png</file>
+        <file>resources/green-dot.png</file>
+        <file>resources/yellow-dot.png</file>
+        <file>resources/blue-dot.png</file>
+        <file>resources/signal.png</file>
+        <file>resources/pol1.png</file>
+        <file>resources/pol0.png</file>
+        <file>resources/pol2.png</file>
+        <file>resources/pol3.png</file>
+        <file>resources/pol4.png</file>
+        <file>resources/pol5.png</file>
+    </qresource>
+</RCC>

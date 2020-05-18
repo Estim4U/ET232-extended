@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Configuration</class>
+ <widget class="QDialog" name="Configuration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>406</width>
+    <height>215</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Configuration</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="2">
+    <widget class="QPushButton" name="pushButton_cancel">
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="pushButton_save">
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QCheckBox" name="checkBox_Geometry">
+     <property name="text">
+      <string>Restore position and size at startup</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="pushButton_default">
+     <property name="text">
+      <string>Restore default</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>When switching to a new mode</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="0">
+       <widget class="QComboBox" name="comboBox_AMAB">
+        <item>
+         <property name="text">
+          <string>Reset A, B and MA to 0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Keep current values of A, B and MA</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Divide current values of A and B by 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Restore my values of A, B and MA</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_1">
+        <property name="text">
+         <string>Knobs A MA B (Applies only if you have taken control of knobs)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Parameters (min max tmin tmax tinc tdec)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QComboBox" name="comboBox_Params">
+        <item>
+         <property name="text">
+          <string>Use default parameters from ET232</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Restore my last parameters</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>checkBox_Geometry</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,53 @@
+// SPDX-License-Identifier: GPL-3.0-only
+
+/*\
+This file is part of the ET232-extended application.
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License version 3 as published
+by the Free Software Foundation https://www.gnu.org/licenses/gpl-3.0.html
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+\*/
+
+#ifndef VERSION_RC
+#define VERSION_RC
+
+#include <windows.h>
+
+#include "version.h"
+
+// https://docs.microsoft.com/fr-fr/windows/desktop/menurc/resource-definition-statements
+
+// Looks like QT/clang preprocessor doesn't know how to handle rc files and generate false errors.
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+// The name IDI_ICON1 is mandatory (https://doc.qt.io/qt-5/appicon.html)
+IDI_ICON1 ICON DISCARDABLE "resources/app.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     APP_VERSION_MAJOR, APP_VERSION_MINOR, APP_REVISION_MAJOR, APP_REVISION_MINOR
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4" // sublang, lang, codepage
+        BEGIN
+            VALUE "CompanyName",        ORG_NAME
+            VALUE "FileDescription",    "ET232 extended by " ORG_NAME
+            VALUE "InternalName",       "ET232_Extended"
+            VALUE "LegalCopyright",     "(c) copyright 2017-2020"
+            VALUE "OriginalFilename",   "ET232_extended.exe"
+            VALUE "ProductName",        APP_NAME
+            VALUE "ProductVersion",     APP_VERSION
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04E4 // sublang, lang, codepage
+    END
+END
+
+#endif // VERSION_RC

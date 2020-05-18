@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>ET232_extended application</DisplayName>
+    <Description>Install ET232_extended.exe</Description>
+    <Version>2.6/20.140</Version>
+    <ReleaseDate>2020-05-19</ReleaseDate>
+    <Licenses>
+        <License name="License Agreement" file="LICENSE.GPL3" />
+    </Licenses>
+	<Default>true</Default>
+</Package>

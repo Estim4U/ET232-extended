@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Title>ET232 Extended Installer</Title>
+    <Name>ET232 Extended</Name>
+    <Version>1.0.0</Version>
+    <Publisher>E-Stim.4U</Publisher>
+    <StartMenuDir>ET232ext</StartMenuDir>
+    <TargetDir>@HomeDir@/ET232ext</TargetDir>
+</Installer>

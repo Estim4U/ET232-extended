@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Documentation</DisplayName>
+    <Description>Documentation</Description>
+    <Version>2.6/20.140</Version>
+    <ReleaseDate>2020-05-19</ReleaseDate>
+	<Default>false</Default>
+</Package>

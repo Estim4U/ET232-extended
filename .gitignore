@@ -1,0 +1,5 @@
+*.exe
+*.dll
+*.pro.user
+build/
+installer/packages/*/data
